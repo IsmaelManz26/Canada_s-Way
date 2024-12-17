@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Kamerik-regular";
+  src: url(../fonts/Regular/);
+}
+@font-face {
+  font-family: "Kamerik-10";
+  src: url(../fonts/kamerik-10/Kamerik-205-Thin-Oblique.ttf);
+}
+@font-face {
+  font-family: "Kamerik-9";
+  src: url(../fonts/kamerik-9/Kamerik-205-Light.ttf);
+}
+@font-face {
+  font-family: "Kamerik-8";
+  src: url(../fonts/kamerik-8/Kamerik-205-Heavy.ttf);
+}
+@font-face {
+  font-family: "Kamerik-7";
+  src: url(../fonts/kamerik-7/Kamerik-205-Heavy-Oblique.ttf);
+}
+@font-face {
+  font-family: "Kamerik-6";
+  src: url(../fonts/kamerik-6/Kamerik-205-Book.ttf);
+}
+@font-face {
+  font-family: "Kamerik-5";
+  src: url(../fonts/kamerik-5/Kamerik-205-Thin.ttf);
+}
+@font-face {
+  font-family: "Kamerik-4";
+  src: url(../fonts/kamerik-4/Kamerik-205-Bold-Oblique.ttf);
+}
+@font-face {
+  font-family: "Kamerik-3";
+  src: url(../fonts/kamerik-3/Kamerik-205-Bold.ttf);
+}
+@font-face {
+  font-family: "Kamerik-2";
+  src: url(../fonts/kamerik-2/Kamerik-205-Book-Oblique.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kamerik", serif;
+} */
+p {
+  max-width: 70ch;
+  line-height: 1.6;
+}
+
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
