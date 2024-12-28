@@ -84,6 +84,16 @@ header.scrolled {
     transform: scale(1);
   }
 }
+/* Estilo del enlace "Explore Now" cuando el header tiene la clase "scrolled" */
+header.scrolled .explore-now-container {
+  background-color: rgb(255, 255, 255);
+}
+header.scrolled .nav-link.explore-now {
+  color: rgb(0, 0, 0);
+}
+header.scrolled .fa-location-dot.explore-now-icon {
+  color: rgb(0, 0, 0);
+}
 
 .menu-on {
   width: max(600px, 50%);
@@ -352,6 +362,7 @@ header.menu-open .menu-on-nav li a:hover {
   align-items: center;
   height: 700px;
   width: 100%;
+  background-color: rgb(151, 150, 150);
 }
 .text-content-slide {
   width: 40%;
@@ -471,6 +482,31 @@ header.menu-open .menu-on-nav li a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.arrow {
+  height: 15px;
+  width: 15px;
+  display: block;
+  transform: rotate(45deg);
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  z-index: 99999;
+}
+
+.natural-item {
+  position: relative;
+}
+
+.natural-item img + .arrow {
+  top: 50%;
+  left: 100%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.natural-item.arrow-left img + .arrow {
+  left: 0%;
 }
 
 /* Oso Seccion */
@@ -738,6 +774,7 @@ header.menu-open .menu-on-nav li a:hover {
   width: 100%;
   height: 300px;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 .monument-item h3 {
   font-family: "Kamerik-8", sans-serif;
@@ -840,4 +877,246 @@ header.menu-open .menu-on-nav li a:hover {
   flex: 1 1 calc(33.333% - 1rem);
   height: 300px;
   object-fit: cover;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #474747;
+  color: white;
+  padding: 4rem 9rem;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-logo-image {
+  width: 50px;
+  height: auto;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-left {
+  flex: 1;
+  max-width: 50%;
+}
+.footer-left p {
+  margin-bottom: 1rem;
+}
+.newsletter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.newsletter-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.newsletter-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.privacy-policy {
+  font-size: 0.8rem;
+}
+.footer-right {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  gap: 2rem;
+}
+.footer-pages,
+.footer-follow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-pages h3,
+.footer-follow h3 {
+  margin-bottom: 1rem;
+}
+.footer-pages ul,
+.footer-follow ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 1rem;
+}
+.footer-pages li,
+.footer-follow li {
+  margin-bottom: 0.5rem;
+}
+.footer-pages a,
+.footer-follow a {
+  color: white;
+  text-decoration: none;
+}
+.footer-follow i {
+  margin-right: 0.5rem;
+}
+.footer-bottom {
+  width: 100%;
+}
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid white;
+  margin-bottom: 1rem;
+}
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Media query */
+@media screen and (max-width: 1400px) {
+  .welcome-section {
+    padding: 6rem 4rem 4rem 4rem;
+  }
+  .history-section {
+    padding: 4rem 4rem;
+  }
+  .natural-section {
+    padding: 4rem;
+  }
+  .monuments-section {
+    padding: 4rem;
+  }
+  .taste-section {
+    padding: 4rem;
+  }
+  .footer-section {
+    padding: 4rem;
+  }
+  .canada-lens-title {
+    padding: 4rem;
+  }
+  .canada-today-section {
+    padding: 4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .logo-link {
+    max-width: 40%;
+  }
+  .phrase-hero h1 {
+    font-size: 6rem;
+  }
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+  .text-content h2 + p {
+    font-size: 1rem;
+  }
+  .canada-today-section {
+    padding: 4rem;
+  }
+  .history-title h2 {
+    font-size: 2rem;
+  }
+  .natural-title h2 {
+    font-size: 2rem;
+  }
+  .natural-item p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .welcome-content {
+    flex-direction: column;
+  }
+  .text-content {
+    width: 100%;
+  }
+  .welcome-image-content {
+    width: 100%;
+  }
+  .oso-text p {
+    font-size: 1rem;
+  }
+  .oso-content h2 {
+    font-size: 1.8rem;
+  }
+  .oso-text p:nth-of-type(2) {
+    display: none;
+  }
+  .natural-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .natural-item:nth-child(3) {
+    order: 4;
+  }
+  .natural-item:nth-child(4) {
+    order: 3;
+  }
+  .natural-item:nth-child(5) {
+    order: 6;
+  }
+  .natural-item:nth-child(6) {
+    order: 5;
+  }
+  .natural-item:nth-child(7) {
+    order: 7;
+  }
+  .natural-item:nth-child(8) {
+    order: 8;
+  }
+
+  .canada-today-container {
+    flex-direction: column-reverse;
+  }
+  .canada-today-image {
+    flex: 1;
+    max-width: none;
+  }
+  .canada-today-content {
+    flex: 1;
+    max-width: none;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .canada-today-text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .canada-today-text p {
+    text-align: left;
+  }
+  .monuments-grid {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .phrase-hero h1 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .text-content h2 {
+    padding-bottom: 0;
+  }
+  .monuments-title p {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
 }

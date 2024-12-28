@@ -28,3 +28,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// BOTON DE SCROLL
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.getElementById("scrollButton");
+  const arrowIcon = scrollButton.querySelector("i");
+
+  scrollButton.addEventListener("click", function () {
+    if (window.scrollY === 0) {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > window.innerHeight / 2) {
+      arrowIcon.classList.remove("fa-arrow-down");
+      arrowIcon.classList.add("fa-arrow-up");
+    } else {
+      arrowIcon.classList.remove("fa-arrow-up");
+      arrowIcon.classList.add("fa-arrow-down");
+    }
+  });
+});
