@@ -12,7 +12,9 @@ if (navBar) {
 
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
-  if (window.scrollY > window.innerHeight * 0.7) {
+  const scrollHeight =
+    parseFloat(header.getAttribute("data-scroll-height")) || 0.7;
+  if (window.scrollY > window.innerHeight * scrollHeight) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
