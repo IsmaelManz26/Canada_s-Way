@@ -645,7 +645,6 @@ header.menu-open .menu-on-nav li a:hover {
   color: transparent;
 }
 /* Media query */
-
 @media screen and (max-width: 1400px) {
   .welcome-section {
     padding: 6rem 4rem 4rem 4rem;
@@ -746,7 +745,6 @@ header.menu-open .menu-on-nav li a:hover {
     display: none;
   }
 }
-
 @media screen and (max-width: 650px) {
   .phrase-hero h1 {
     font-size: 4rem;
@@ -766,7 +764,6 @@ header.menu-open .menu-on-nav li a:hover {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .phrase-hero h1 {
     font-size: 4rem;
