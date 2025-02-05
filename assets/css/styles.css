@@ -1009,6 +1009,13 @@ header.menu-open .menu-on-nav li a:hover {
   .monuments-title p {
     max-width: 90%;
   }
+  .taste-gallery {
+    flex-direction: column;
+  }
+  .taste-image {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 450px) {
 }

@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canada's Way</title>
+
+    <link rel="stylesheet" href="assets/slider-routes/splide.min.css" />
+    <link rel="stylesheet" href="assets/slider-routes/glide.core.min.css" />
+    <link rel="stylesheet" href="assets/slider-routes/slider-routes.css" />
+
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/routes.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/collapse.css" />
+
     <script
       src="https://kit.fontawesome.com/2dc5fc06c2.js"
       crossorigin="anonymous"
@@ -73,6 +79,702 @@
         </div>
         <div class="explore-right">
           <p>Adventure, culture, and unforgettable experiences await!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nueva sección de Unique Experiences -->
+    <section class="unique-experiences-section">
+      <div class="unique-experiences-container">
+        <div class="unique-experiences-title">
+          <h2><u>Unique Experiences</u></h2>
+        </div>
+        <div class="unique-experiences-slider-container">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <div class="unique-experiences-slider">
+            <div class="slide" id="s1">
+              <img
+                src="assets/imgs/experiencies/1.webp"
+                alt="Winter Festival"
+                class="experience-image"
+              />
+              <p>Great Winter Festivals in Alberta</p>
+            </div>
+            <div class="slide" id="s2">
+              <img
+                src="assets/imgs/experiencies/2.webp"
+                alt="BC Mountains"
+                class="experience-image"
+              />
+              <p>The Mountains of British Columbia: A Ski Paradise</p>
+            </div>
+            <div class="slide" id="s3">
+              <img
+                src="assets/imgs/experiencies/3.webp"
+                alt="Niagara Falls"
+                class="experience-image"
+              />
+              <p>Niagara Falls: A Natural Wonder</p>
+            </div>
+            <div class="slide" id="s4">
+              <img
+                src="assets/imgs/experiencies/4.webp"
+                alt="Quebec City"
+                class="experience-image"
+              />
+              <p>Quebec City: A Journey Through History</p>
+            </div>
+          </div>
+          <div class="navigation">
+            <label for="slide1" class="nav-btn"></label>
+            <label for="slide2" class="nav-btn"></label>
+            <label for="slide3" class="nav-btn"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Must-Visit Destinations -->
+    <section class="must-visit-section">
+      <div class="must-visit-container">
+        <div class="must-visit-title">
+          <h2><u>Must-Visit Destinations</u></h2>
+        </div>
+        <div class="must-visit-content">
+          <div class="must-visit-info">
+            <div class="must-visit-text">
+              <p>
+                Canada offers diverse landscapes, from the breathtaking Rocky
+                Mountains to the serene coastlines of Vancouver Island. Nature
+                lovers can explore Banff, Jasper, and the iconic Niagara Falls
+                for unforgettable outdoor adventures.
+              </p>
+              <p>
+                Vibrant cities like Toronto and Montreal blend rich culture with
+                modern attractions. Experience Quebec City's historic charm, or
+                enjoy the lively arts scene and multicultural vibe of Canada’s
+                urban centers.
+              </p>
+              <p>
+                Whether hiking in the Yukon or enjoying coastal beauty in Prince
+                Edward Island, Canada has something for every traveler. With
+                diverse landscapes and rich culture, each destination offers
+                unique, unforgettable experiences.
+              </p>
+            </div>
+            <div class="must-visit-buttons">
+              <div class="must-visit-buttons-1">
+                <button>Explore More Destinations</button>
+              </div>
+              <div class="must-visit-buttons-2">
+                <button>Start Your Journey</button>
+              </div>
+            </div>
+          </div>
+          <div class="must-visit-image">
+            <img src="assets/imgs/canada-intro-routes.jpeg" alt="" />
+            <img src="assets/imgs/torre-rojayblanca-2-3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Imagen de fondo y textos superpuestos -->
+    <section class="background-image-section">
+      <div class="background-image-container">
+        <div class="background-image-overlay"></div>
+        <div class="background-image-content">
+          <h2>Discover Canada's Beauty</h2>
+          <h2>Experience the breathtaking landscapes and vibrant cities.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider Router Cronology -->
+    <section class="routes separate-section-top horizontal-padding mt-8">
+      <div class="routes__container container-large">
+        <!-- <h2 class="section-title uppercase">
+          <span class="outline-text">Explore Our</span><br />Amazing Routes
+        </h2> -->
+        <div class="first glide">
+          <div class="glide__arrows mobile-hidden" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide slider-1">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">Canadian Rockies Adventure</h3>
+                  <div class="tag__container">
+                    <p class="tags__text">
+                      Adventure&nbsp;&nbsp;<span class="divider--grey">—</span
+                      >&nbsp;&nbsp;Nature &nbsp;&nbsp;<span
+                        class="divider--grey"
+                        >—</span
+                      >&nbsp;&nbsp;Hiking
+                    </p>
+                  </div>
+
+                  <div class="route__info">
+                    <div class="route__length">
+                      <div class="route__kilometer">
+                        <p class="featured-comparison__meta__length">
+                          4 DAYS <span class="divider--grey">—</span>
+                          <span>300 km</span>
+                        </p>
+                      </div>
+                      <div class="route__location">
+                        <p>Vancouver > Banff > Jasper</p>
+                      </div>
+                    </div>
+                    <div class="route__map">
+                      <img src="assets/imgs/isla-sin-fondo.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="route__description">
+                    Embark on a breathtaking journey through the Canadian
+                    Rockies. Enjoy scenic drives, hiking in national parks, and
+                    exploring picturesque lakes and wildlife.
+                  </p>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-2">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 1</h3>
+                  <h4 class="section-smalltitle">Explore Vancouver</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Start your adventure in the vibrant city of
+                      <span class="bold">Vancouver</span>. Explore the bustling
+                      downtown area, visit
+                      <span class="bold">Stanley Park</span>, and enjoy the
+                      stunning views from the
+                      <span class="bold">Vancouver Lookout</span>.
+                    </p>
+                    <p class="route__description">
+                      Discover the diverse neighborhoods, including
+                      <span class="bold">Gastown</span> and
+                      <span class="bold">Chinatown</span>, and indulge in the
+                      local cuisine at one of the many
+                      <span class="bold">restaurants</span> and
+                      <span class="bold">cafés</span>.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For those looking for more adventure, take a
+                      <span class="bold">bike ride</span> along the seawall or
+                      go <span class="bold">kayaking</span> in the nearby
+                      waters. Don't forget to visit the
+                      <span class="bold">Capilano Suspension Bridge</span> for a
+                      thrilling experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-3">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 2</h3>
+                  <h4 class="section-smalltitle">Explore Banff</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Begin your day in the charming town of
+                      <span class="bold">Banff</span>. Visit the
+                      <span class="bold">Banff National Park</span> and take a
+                      scenic drive along the
+                      <span class="bold">Icefields Parkway</span>.
+                    </p>
+                    <p class="route__description">
+                      Explore the stunning
+                      <span class="bold">Lake Louise</span> and
+                      <span class="bold">Moraine Lake</span>, known for their
+                      turquoise waters and breathtaking mountain views.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For those seeking adventure, hike the trails around
+                      <span class="bold">Johnston Canyon</span> or take a
+                      gondola ride up
+                      <span class="bold">Sulphur Mountain</span> for panoramic
+                      views of the Rockies.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-4">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 3</h3>
+                  <h4 class="section-smalltitle">Explore Jasper</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Continue your adventure in the picturesque town of
+                      <span class="bold">Jasper</span>. Visit the
+                      <span class="bold">Jasper National Park</span> and take a
+                      scenic drive along the
+                      <span class="bold">Icefields Parkway</span>.
+                    </p>
+                    <p class="route__description">
+                      Explore the stunning
+                      <span class="bold">Maligne Lake</span> and
+                      <span class="bold">Spirit Island</span>, known for their
+                      crystal-clear waters and breathtaking mountain views.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For those seeking adventure, hike the trails around
+                      <span class="bold">Maligne Canyon</span> or take a boat
+                      tour on <span class="bold">Maligne Lake</span> for a
+                      unique perspective of the Rockies.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        </div>
+        <div class="second glide">
+          <div class="glide__arrows mobile-hidden" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide slider-1">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">Eastern Canada Discovery</h3>
+                  <div class="tag__container">
+                    <p class="tags__text">
+                      Culture&nbsp;&nbsp;<span class="divider--grey">—</span
+                      >&nbsp;&nbsp;History &nbsp;&nbsp;<span
+                        class="divider--grey"
+                        >—</span
+                      >&nbsp;&nbsp;Nature
+                    </p>
+                  </div>
+
+                  <div class="route__info">
+                    <div class="route__length">
+                      <div class="route__kilometer">
+                        <p class="featured-comparison__meta__length">
+                          5 DAYS <span class="divider--grey">—</span>
+                          <span>400 km</span>
+                        </p>
+                      </div>
+                      <div class="route__location">
+                        <p>Toronto > Ottawa > Montreal > Quebec</p>
+                      </div>
+                    </div>
+                    <div class="route__map">
+                      <img src="assets/imgs/isla-sin-fondo.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="route__description">
+                    Discover the rich history and vibrant culture of Eastern
+                    Canada. From the bustling streets of Toronto to the charming
+                    Old Quebec, this journey takes you through iconic landmarks,
+                    scenic landscapes, and cultural experiences that define the
+                    region.
+                  </p>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-2">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 1</h3>
+                  <h4 class="section-smalltitle">Discover Toronto</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Explore the vibrant city of Toronto. Visit the iconic CN
+                      Tower for breathtaking views. Stroll through the historic
+                      Distillery District and lively Nathan Phillips Square.
+                    </p>
+                    <p class="route__description">
+                      Experience the city's cultural diversity in Kensington
+                      Market and Chinatown. Don’t miss a trip to the stunning
+                      Niagara Falls, just an hour away.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For adventure seekers, take a boat ride to the base of the
+                      falls or cross the thrilling Whirlpool Aero Car.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-3">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 2</h3>
+                  <h4 class="section-smalltitle">Explore Ottawa</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Arrive in Canada’s capital, Ottawa. Visit the majestic
+                      Parliament Hill and take a walk along the Rideau Canal, a
+                      UNESCO World Heritage Site.
+                    </p>
+                    <p class="route__description">
+                      Discover Canadian heritage at the Canadian Museum of
+                      History and learn about Indigenous culture.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For nature lovers, hike the scenic trails of Gatineau Park
+                      or go kayaking on the Ottawa River.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-4">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 3</h3>
+                  <h4 class="section-smalltitle">Explore Montreal</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Immerse yourself in the cultural hub of Montreal. Wander
+                      through the charming Old Montreal and admire the stunning
+                      Notre-Dame Basilica.
+                    </p>
+                    <p class="route__description">
+                      Explore the modern Place des Arts and indulge in local
+                      flavors at Jean-Talon Market.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For a panoramic city view, hike up Mount Royal, a must-see
+                      spot for breathtaking scenery.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-5">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 4</h3>
+                  <h4 class="section-smalltitle">Explore Quebec City</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Travel to the picturesque city of Quebec. Stroll through
+                      the historic Old Quebec, a UNESCO World Heritage Site.
+                    </p>
+                    <p class="route__description">
+                      Walk along the Dufferin Terrace, offering incredible views
+                      of the Château Frontenac.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      Experience the natural beauty of Montmorency Falls, one of
+                      Canada’s highest waterfalls.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+          </div>
+        </div>
+        <div class="third glide">
+          <div class="glide__arrows mobile-hidden" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide slider-1">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">Atlantic Coastal Adventure</h3>
+                  <div class="tag__container">
+                    <p class="tags__text">
+                      Ocean &nbsp;&nbsp;<span class="divider--grey">—</span
+                      >&nbsp;&nbsp;Wildlife &nbsp;&nbsp;<span
+                        class="divider--grey"
+                        >—</span
+                      >&nbsp;&nbsp;Scenic Views
+                    </p>
+                  </div>
+
+                  <div class="route__info">
+                    <div class="route__length">
+                      <div class="route__kilometer">
+                        <p class="featured-comparison__meta__length">
+                          4 DAYS <span class="divider--grey">—</span>
+                          <span>400 km</span>
+                        </p>
+                      </div>
+                      <div class="route__location">
+                        <p>
+                          Halifax > Peggy’s Cove > Cape Breton > Prince Edward
+                          Island
+                        </p>
+                      </div>
+                    </div>
+                    <div class="route__map">
+                      <img src="assets/imgs/isla-sin-fondo.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="route__description">
+                    Experience the rugged beauty of Canada’s Atlantic coast.
+                    From historic port cities to breathtaking coastal views,
+                    this adventure offers a perfect blend of maritime culture,
+                    natural wonders, and unforgettable oceanfront landscapes.
+                  </p>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-2">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 1</h3>
+                  <h4 class="section-smalltitle">Discover Halifax</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Start your journey in Halifax, the vibrant capital of Nova
+                      Scotia. Visit the historic Citadel Hill and explore the
+                      Maritime Museum of the Atlantic.
+                    </p>
+                    <p class="route__description">
+                      Take a relaxing walk along the Halifax Waterfront
+                      Boardwalk and enjoy fresh seafood at the local
+                      restaurants.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For breathtaking ocean views, take a ferry ride to
+                      Dartmouth and enjoy the coastal scenery.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-3">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 2</h3>
+                  <h4 class="section-smalltitle">Visit Peggy’s Cove</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Travel to the iconic Peggy’s Cove, home to one of the most
+                      famous lighthouses in Canada. Explore the rugged coastline
+                      and take stunning photos of the Atlantic waves crashing
+                      against the rocks.
+                    </p>
+                    <p class="route__description">
+                      Enjoy fresh lobster at a local seafood shack while taking
+                      in the salty ocean breeze.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      For adventure lovers, go kayaking along the shoreline or
+                      explore the charming fishing villages nearby.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-4">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">DAY 3</h3>
+                  <h4 class="section-smalltitle">Explore Cape Breton Island</h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Drive along the breathtaking Cabot Trail, one of the most
+                      scenic routes in North America. Stop at Cape Breton
+                      Highlands National Park for hiking and wildlife spotting.
+                    </p>
+                    <p class="route__description">
+                      Visit the charming town of Baddeck, home to the Alexander
+                      Graham Bell Museum.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      Enjoy a traditional Ceilidh (Celtic music gathering) for
+                      an authentic taste of Nova Scotia's culture.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Canada Through the Lens -->
+    <section class="canada-lens-section">
+      <div class="canada-lens-container">
+        <div class="canada-lens-title">
+          <h2><u>Canada Through the Lens</u></h2>
+        </div>
+        <div class="canada-lens-grid">
+          <div class="canada-lens-item">
+            <img
+              src="assets/imgs/galeria3/galeria3-1.jpg"
+              alt="Foto 1"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item horizontal">
+            <img
+              src="assets/imgs/galeria3/galeria3-2.jpg"
+              alt="Foto 2"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item">
+            <img
+              src="assets/imgs/galeria3/galeria3-3.jpg"
+              alt="Foto 3"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item">
+            <img
+              src="assets/imgs/galeria3/galeria3-4.jpg"
+              alt="Foto 4"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item horizontal">
+            <img
+              src="assets/imgs/galeria3/galeria3-5.jpg"
+              alt="Foto 5"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item">
+            <img
+              src="assets/imgs/galeria3/galeria3-6.jpg"
+              alt="Foto 6"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item horizontal">
+            <img
+              src="assets/imgs/galeria3/galeria3-7.jpg"
+              alt="Foto 7"
+              class="canada-lens-image estadio-image"
+            />
+          </div>
+          <div class="canada-lens-item horizontal">
+            <img
+              src="assets/imgs/galeria3/galeria3-8.jpg"
+              alt="Foto 8"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item horizontal">
+            <img
+              src="assets/imgs/galeria3/galeria3-9.jpg"
+              alt="Foto 9"
+              class="canada-lens-image"
+            />
+          </div>
+          <div class="canada-lens-item">
+            <img
+              src="assets/imgs/galeria3/galeria3-10.jpg"
+              alt="Foto 10"
+              class="canada-lens-image"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -156,5 +858,7 @@
     </button>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/slider-routes/glide.min.js"></script>
+    <script src="assets/slider-routes/slider.js"></script>
   </body>
 </html>
