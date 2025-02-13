@@ -353,13 +353,23 @@ input[type="radio"] {
 #slide3:checked ~ .unique-experiences-slider {
   transform: translateX(-100%);
 }
+/* #slide4:checked ~ .unique-experiences-slider {
+  transform: translateX(-75%);
+} */
+
 #slide1:checked ~ .navigation .nav-btn:nth-child(1),
 #slide2:checked ~ .navigation .nav-btn:nth-child(2),
-#slide3:checked ~ .navigation .nav-btn:nth-child(3) {
+#slide3:checked ~ .navigation .nav-btn:nth-child(3),
+#slide4:checked ~ .navigation .nav-btn:nth-child(4) {
   background-color: #333;
 }
+/* Ocultar el cuarto input y label por defecto */
+.hidden-slide,
+.hidden-label {
+  display: none;
+}
 
-/*  */
+/* MUST VISIT */
 .must-visit-section {
   width: 100%;
   height: auto;
@@ -433,7 +443,6 @@ input[type="radio"] {
   padding-top: 2rem;
   gap: 1rem;
 }
-
 .must-visit-buttons-1 button:first-child {
   width: 50%;
   background-color: black;
@@ -447,7 +456,6 @@ input[type="radio"] {
 .must-visit-buttons-1 button:first-child:hover {
   background-color: #333;
 }
-
 .must-visit-buttons-2 {
   margin-left: 48%;
 }
@@ -569,6 +577,13 @@ input[type="radio"] {
   .welcome-section {
     padding: 6rem 4rem 4rem 4rem;
   }
+  /* slider experiencies */
+  .slide p {
+    font-size: 1rem;
+  }
+  .must-visit-image img {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .logo-link {
@@ -580,6 +595,33 @@ input[type="radio"] {
   }
   .phrase-hero h1 {
     font-size: 6rem;
+  }
+  /* Introduccion */
+  .explore-container {
+    gap: 2rem;
+  }
+  .explore-left p,
+  .explore-right p {
+    font-size: 1.5rem;
+  }
+  /* Slider Experiencias */
+  .unique-experiences-section {
+    width: 100%;
+    padding: 4rem 4rem;
+  }
+  /* MUST VISIT */
+  .must-visit-container {
+    padding: 4rem 4rem 8rem 4rem;
+  }
+  .must-visit-image img {
+    width: 60%;
+  }
+  .must-visit-info {
+    padding-top: 2rem;
+    padding-right: 1rem;
+  }
+  .must-visit-text p {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 960px) {
@@ -594,6 +636,67 @@ input[type="radio"] {
   }
   .welcome-text {
     font-size: 1rem;
+  }
+  /* Introduccion */
+  .explore-section {
+    padding: 4rem 4rem;
+  }
+  .unique-experiences-title h2 {
+    font-size: 2rem;
+  }
+  /* SLIDER EXPERIENCES */
+  .unique-experiences-slider {
+    width: 200%;
+  }
+  .slide {
+    flex: 1 0 100%;
+  }
+  #slide1:checked ~ .unique-experiences-slider {
+    transform: translateX(0%);
+  }
+  #slide2:checked ~ .unique-experiences-slider {
+    transform: translateX(-100%);
+  }
+  #slide3:checked ~ .unique-experiences-slider {
+    transform: translateX(-200%);
+  }
+  #slide4:checked ~ .unique-experiences-slider {
+    transform: translateX(-300%);
+  }
+  .hidden-slide,
+  .hidden-label {
+    display: block;
+  }
+  .slide p {
+    margin-bottom: 1.5rem;
+  }
+  /* MUST VISIT */
+  .must-visit-title h2 {
+    font-size: 2rem;
+  }
+  .must-visit-content {
+    flex-direction: column;
+  }
+  .must-visit-info {
+    width: 100%;
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .must-visit-buttons-2 {
+    margin-left: 50%;
+  }
+  .must-visit-image {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .must-visit-image img:nth-child(2) {
+    margin-left: 40%;
+  }
+  .routes {
+    margin-top: 6rem;
+  }
+  .canada-lens-title {
+    padding: 4rem 4rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -614,6 +717,39 @@ input[type="radio"] {
   .welcome-content {
     width: 100%;
   }
+  /* Slider Experiencias */
+  .unique-experiences-section {
+    padding: 2rem 2rem;
+  }
+  .unique-experiences-title h2 {
+    font-size: 1.8rem;
+  }
+  .routes {
+    margin-top: 2rem;
+  }
+  .first,
+  .second,
+  .third {
+    margin-bottom: 2rem;
+  }
+  /* Canada Through the Lens */
+  .canada-lens-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .canada-lens-item.horizontal {
+    grid-column: span 2;
+  }
+
+  .canada-lens-image {
+    height: 200px;
+  }
+  .canada-lens-item:nth-child(1),
+  .canada-lens-item:nth-child(6),
+  .canada-lens-item:nth-child(10) {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .phrase-hero h1 {
@@ -622,6 +758,26 @@ input[type="radio"] {
   }
   .welcome-section {
     padding: 4rem 2rem;
+  }
+  /* Introduccion */
+  .explore-section {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+  .explore-left p,
+  .explore-right p {
+    font-size: 1.3rem;
+  }
+  .explore-left {
+    width: 90%;
+  }
+  .explore-right {
+    width: 80%;
+  }
+  .must-visit-container {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+  .background-image-content h2 {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 450px) {

@@ -492,7 +492,7 @@ header.menu-open .menu-on-nav li a:hover {
   position: absolute;
   left: 50%;
   bottom: -7px;
-  z-index: 99999;
+  z-index: 9;
 }
 
 .natural-item {
