@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canada's Way</title>
+
+    <link rel="stylesheet" href="assets/slider-routes/splide.min.css" />
+    <link rel="stylesheet" href="assets/slider-routes/glide.core.min.css" />
+    <link rel="stylesheet" href="assets/slider-routes/slider-routes.css" />
+
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
@@ -130,41 +135,192 @@
       </div>
     </section>
 
-    <!-- Sección de historia -->
-    <section class="history-section">
-      <div class="history-container">
-        <div class="history-title">
-          <h2>History</h2>
-        </div>
-        <div class="history-slider">
-          <div class="slide">
-            <div class="slide-content">
-              <div class="text-content-slide">
-                <h3>Introduction</h3>
-                <h4>Subtitle</h4>
-                <p>
-                  Experience the milestones that have influenced our culture and
-                  heritage.
-                </p>
-                <div class="timeline">
-                  <span>Intro</span>
-                  <span>1</span>
-                  <span>2</span>
-                  <span>3</span>
-                  <span>4</span>
-                  <span>5</span>
-                </div>
-              </div>
-              <div class="image-content">
-                <img
-                  src="assets/imgs/history/contitucion.webp"
-                  alt="Introduction Image"
-                  class="history-image"
-                />
-              </div>
-            </div>
+    <!-- Slider Router Cronology -->
+    <section class="routes separate-section-top horizontal-padding mt-8">
+      <div class="routes__container container-large">
+        <!-- <h2 class="section-title uppercase">
+          <span class="outline-text">Explore Our</span><br />Amazing Routes
+        </h2> -->
+        <div class="first-home glide">
+          <div class="glide__arrows mobile-hidden" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+                focusable="false"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
           </div>
-          <!-- Añade más slides aquí -->
+
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide slider-1">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">The History of Canada</h3>
+                  <div class="tag__container">
+                    <p class="tags__text">
+                      Heritage&nbsp;&nbsp;<span class="divider--grey">—</span
+                      >&nbsp;&nbsp;History&nbsp;&nbsp;<span
+                        class="divider--grey"
+                        >—</span
+                      >&nbsp;&nbsp;Culture
+                    </p>
+                  </div>
+
+                  <div class="route__info">
+                    <div class="route__length">
+                      <div class="route__kilometer">
+                        <p class="featured-comparison__meta__length">
+                          Over 500 Years <span class="divider--grey">—</span>
+                          <span>Key Historical Events</span>
+                        </p>
+                      </div>
+                      <div class="route__location">
+                        <p>Indigenous Lands > Colonization > Confederation</p>
+                      </div>
+                    </div>
+                    <!-- <div class="route__map">
+                      <img src="assets/imgs/isla-sin-fondo.png" alt="" />
+                    </div> -->
+                  </div>
+                  <p class="route__description">
+                    Discover the rich and diverse history of Canada, from its
+                    <span class="bold">Indigenous roots</span> and vibrant
+                    cultures to the era of
+                    <span class="bold">European exploration</span> and
+                    settlement. Trace the nation's journey through pivotal
+                    moments, from the <span class="bold">fur trade</span> and
+                    colonial struggles to the formation of
+                    <span class="bold">Confederation in 1867</span>. Learn about
+                    the people, events, and challenges that shaped Canada into
+                    the country it is today.
+                  </p>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-2">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">Early Canada</h3>
+                  <h4 class="section-smalltitle section-smalltitle-home">
+                    Indigenous Peoples & First Contacts
+                  </h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      Before European arrival, Canada was home to diverse
+                      <span class="bold">Indigenous cultures</span> with rich
+                      traditions, languages, and trade networks.
+                    </p>
+                    <p class="route__description">
+                      In the late 15th century,
+                      <span class="bold">John Cabot</span> landed on Canada's
+                      east coast, marking the start of European exploration.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      The early 1600s saw the establishment of
+                      <span class="bold">New France</span> with the founding of
+                      <span class="bold">Quebec</span> by
+                      <span class="bold">Samuel de Champlain</span>.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-3">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">European Exploration</h3>
+                  <h4 class="section-smalltitle section-smalltitle-home">
+                    First Encounters and New Frontiers
+                  </h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      In 1497, <span class="bold">John Cabot</span> became one
+                      of the first Europeans to reach Canada, opening the door
+                      to further exploration.
+                    </p>
+                    <p class="route__description">
+                      In 1534, <span class="bold">Jacques Cartier</span> sailed
+                      the St. Lawrence River, claiming the land for France,
+                      laying the foundation for French settlement.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      The establishment of the
+                      <span class="bold">New France colony</span> in the early
+                      1600s, marked a significant era in Canada's history with
+                      strong ties to Europe.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+              <li class="glide__slide slider-4">
+                <div class="slider__content">
+                  <h3 class="section-subtitle">Confederation</h3>
+                  <h4 class="section-smalltitle section-smalltitle-home">
+                    The Formation of Canada
+                  </h4>
+
+                  <div class="route__content">
+                    <p class="route__description">
+                      In 1867, the
+                      <span class="bold">British North America Act</span> united
+                      the provinces of Ontario, Quebec, New Brunswick, and Nova
+                      Scotia to form the Dominion of Canada.
+                    </p>
+                    <p class="route__description">
+                      The creation of
+                      <span class="bold">Confederation</span> marked the
+                      beginning of Canada's journey as a self-governing country
+                      within the British Empire.
+                    </p>
+                    <p class="route__description mobile-hidden">
+                      Over time, more provinces and territories joined,
+                      expanding Canada into the nation we know today.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__image"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button
+              class="glide__bullet glide__bullet-home"
+              data-glide-dir="=0"
+            ></button>
+            <button
+              class="glide__bullet glide__bullet-home"
+              data-glide-dir="=1"
+            ></button>
+            <button
+              class="glide__bullet glide__bullet-home"
+              data-glide-dir="=2"
+            ></button>
+            <button
+              class="glide__bullet glide__bullet-home"
+              data-glide-dir="=3"
+            ></button>
+          </div>
         </div>
       </div>
     </section>
@@ -578,5 +734,7 @@
     </button>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/slider-routes/glide.min.js"></script>
+    <script src="assets/slider-routes/slider.js"></script>
   </body>
 </html>

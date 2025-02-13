@@ -692,9 +692,7 @@ input[type="radio"] {
   .must-visit-image img:nth-child(2) {
     margin-left: 40%;
   }
-  .routes {
-    margin-top: 6rem;
-  }
+
   .canada-lens-title {
     padding: 4rem 4rem;
   }
@@ -724,14 +722,7 @@ input[type="radio"] {
   .unique-experiences-title h2 {
     font-size: 1.8rem;
   }
-  .routes {
-    margin-top: 2rem;
-  }
-  .first,
-  .second,
-  .third {
-    margin-bottom: 2rem;
-  }
+
   /* Canada Through the Lens */
   .canada-lens-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -4,7 +4,9 @@
   --text-color-darker: #000;
   --text-normal-color: #62635f;
 }
-
+.bold {
+  font-weight: bold;
+}
 .container-large {
   flex: 1;
   width: 100%;
@@ -21,32 +23,29 @@
   margin-top: 8rem;
 }
 
-/* //////////////////////////////// */
 /* SLIDER ROUTES */
-/* //////////////////////////////// */
 .routes {
   --routes-light-text-color: #bbbbbb;
 }
-
 .routes .section-title {
   margin-bottom: 50px;
 }
-
 .routes .section-subtitle {
   padding-right: 5%;
 }
-
 .routes .section-smalltitle {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-top: 50px;
   letter-spacing: 0.1rem;
 }
-
+.section-smalltitle-home {
+  width: 100%;
+  margin-bottom: 50px;
+}
 .glide__slide {
   display: flex;
 }
-
 .slider__content {
   padding: 70px 50px 100px 70px;
   flex: 0 830px;
@@ -54,46 +53,36 @@
   background-color: var(--text-color);
   color: white;
 }
-
 .slider__content .section-subtitle {
   line-height: 2.5rem;
   font-size: 2rem;
   letter-spacing: 0.3rem;
 }
-
 .slider__content .tags__text {
   font-size: 13px;
   color: var(--routes-light-text-color);
   line-height: 2rem;
   margin: 0;
 }
-
 .slider__content .tags__text .divider--grey {
   color: #727272;
 }
-
 .route__kilometer p {
-  /* color: var(--routes-light-text-color); */
   font-size: 1.5rem;
   line-height: normal;
 }
-
 .route__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 25px 0;
 }
-
 .route__location p {
   font-size: 1rem;
-  /* color: var(--routes-light-text-color); */
 }
-
 .route__map img {
   width: 85px;
 }
-
 .route__content {
   margin-top: 100px;
   margin-bottom: 50px;
@@ -104,61 +93,61 @@
 .route__content p:last-child {
   margin-bottom: 0;
 }
-
 .route__description {
   font-size: 1.2rem;
   line-height: 1.6rem;
 }
-
 .slider__image {
   flex: 7;
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
 }
-
 .first,
 .second,
 .third {
   margin-bottom: 100px;
 }
 
+.first-home .slider-1 .slider__image {
+  background-image: url("../imgs/memoriales-canada-history.jpg");
+}
+.first-home .slider-2 .slider__image {
+  background-image: url("../imgs/tribu-canada.jpg");
+}
+.first-home .slider-3 .slider__image {
+  background-image: url("../imgs/John-Cabot-statue.jpg");
+}
+.first-home .slider-4 .slider__image {
+  background-image: url("../imgs/confederation.jpg");
+}
 .first .slider-1 .slider__image {
   background-image: url("../imgs/routa1/route1-1.jpg");
 }
-
 .first .slider-2 .slider__image {
   background-image: url("../imgs/routa1/vancouver.jpg");
 }
-
 .first .slider-3 .slider__image {
   background-image: url("../imgs/routa1/banff.jpg");
 }
-
 .first .slider-4 .slider__image {
   background-image: url("../imgs/routa1/jasper.jpg");
 }
-
 .second .slider-1 .slider__image {
   background-image: url("../imgs/routa2/route1.jpg");
 }
-
 .second .slider-2 .slider__image {
   background-image: url("../imgs/routa2/toronto.jpg");
 }
-
 .second .slider-3 .slider__image {
   background-image: url("../imgs/routa2/otawa.jpg");
 }
-
 .second .slider-4 .slider__image {
   background-image: url("../imgs/routa2/Montreal.jpg");
 }
-
 .second .slider-5 .slider__image {
   background-image: url("../imgs/routa2/QuebecCity.jpg");
 }
-
 .third .slider-1 .slider__image {
   background-image: url("../imgs/route3/portada.jpg");
 }
@@ -172,10 +161,7 @@
   background-image: url("../imgs/route3/cape-breton-island.jpg");
 }
 
-/* //////////////////////////////// */
 /* GLIDE ROUTES */
-/* //////////////////////////////// */
-
 .glide__arrow {
   -ms-flex-align: center;
   align-items: center;
@@ -196,25 +182,20 @@
   width: 2em;
   z-index: 1;
 }
-
 .glide__arrow--left svg {
   transform: scaleX(-1);
 }
-
 .glide__arrow svg {
   fill: #000;
   height: 1.2em;
   width: 1.2em;
 }
-
 .glide__arrow--left {
   left: 1rem;
 }
-
 .glide__arrow--right {
   right: 1em;
 }
-
 .glide__bullets {
   user-select: none;
   display: flex;
@@ -223,14 +204,12 @@
   margin: 0 auto;
   padding: 0;
 }
-
 .glide__bullets {
   position: absolute;
   width: 450px;
   bottom: 75px;
   left: 115px;
 }
-
 .glide__bullet {
   position: relative;
   border: 0;
@@ -248,7 +227,6 @@
   z-index: 9999;
   transition: all 0.3s ease;
 }
-
 .glide__bullets::before {
   content: "";
   display: block;
@@ -257,79 +235,87 @@
   position: absolute;
   top: 5px;
 }
-
 .glide__bullet::after {
   left: -12px;
   position: absolute;
   bottom: -35px;
   width: 50px;
 }
-
 .glide__bullet:first-child::after {
   content: "Intro";
 }
-
 .glide__bullet:nth-child(2)::after {
   content: "Day 1";
 }
-
 .glide__bullet:nth-child(3)::after {
   content: "Day 2";
 }
-
 .glide__bullet:nth-child(4)::after {
   content: "Day 3";
 }
-
 .glide__bullet:nth-child(5)::after {
   content: "Day 4";
 }
-
 .glide__bullet:nth-child(6)::after {
   content: "Day 5";
 }
-
 .glide__bullet:nth-child(7)::after {
   content: "Day 6";
 }
-
 .glide__bullet:nth-child(8)::after {
   content: "Day 7";
 }
-
 .glide__bullet:hover,
 .glide__bullet:focus,
 .glide__bullet.glide__bullet--active {
   background: #0193de;
+}
+.glide__bullet-home:first-child::after {
+  content: "History";
+}
+.glide__bullet-home:nth-child(2)::after {
+  content: "Indigenous";
+}
+.glide__bullet-home:nth-child(3)::after {
+  content: "European";
+}
+.glide__bullet-home:nth-child(4)::after {
+  content: "Confederation";
+}
+.glide__bullet-home::after {
+  left: -40px;
+  position: absolute;
+  bottom: -35px;
+  width: 100px;
 }
 
 .glide__slide {
   height: auto;
 }
 
-/* //////////////////////////////// */
 /* MEDIA QUERIES */
-/* //////////////////////////////// */
-
 @media screen and (max-width: 1200px) {
   .glide__slide {
     flex-direction: column-reverse;
   }
-
   .slider__image {
     height: 500px;
     flex: none;
   }
-
   .slider__content {
     height: 50%;
     flex: none;
   }
-
   .glide__bullets {
     left: 0;
     right: 0;
     bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .routes {
+    margin-top: 6rem;
   }
 }
 
@@ -345,6 +331,23 @@
   }
   .slider__content {
     padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .routes {
+    margin-top: 2rem;
+  }
+  .first,
+  .second,
+  .third {
+    margin-bottom: 2rem;
+  }
+  .slider__content {
+    padding: 70px 50px 250px 70px;
+  }
+  .glide__bullets {
+    width: 70%;
   }
 }
 
