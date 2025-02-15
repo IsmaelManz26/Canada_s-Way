@@ -293,11 +293,10 @@ header.menu-open .menu-on-nav li a:hover {
   justify-content: space-between;
   gap: 2rem;
 }
-.offices-inf:nth-child(1) {
+/* .offices-inf:nth-child(1) {
 }
-
 .offices-inf:nth-child(2) {
-}
+} */
 .offices-inf > div:nth-child(1) > p,
 .offices-inf > div:nth-child(2) > p {
   font-size: 1.2rem;
