@@ -45,6 +45,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.bold {
+  font-weight: bold;
+}
 :root {
 }
 body {
