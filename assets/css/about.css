@@ -283,6 +283,7 @@ header.menu-open .menu-on-nav li a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 5rem;
 }
 .welcome-text {
   width: 100%;
@@ -443,13 +444,13 @@ header.menu-open .menu-on-nav li a:hover {
   align-items: center;
 }
 .highlight-item img {
-  width: 200px;
+  width: 120px;
   height: auto;
   object-fit: cover;
   margin-bottom: 1rem;
 }
 .highlight-item h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Kamerik-3", sans-serif;
   font-weight: 400;
 }
@@ -762,6 +763,7 @@ header.menu-open .menu-on-nav li a:hover {
   }
   .welcome-content {
     width: 100%;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -794,6 +796,10 @@ header.menu-open .menu-on-nav li a:hover {
   }
   .canada-lens-title {
     padding: 2rem;
+  }
+  .canada-highlights-content {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 @media screen and (max-width: 450px) {
