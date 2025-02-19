@@ -997,8 +997,20 @@ header.menu-open .menu-on-nav li a:hover {
   .monuments-grid {
     flex-direction: column;
   }
+  .welcome-section {
+    padding: 6rem 4rem 0 4rem;
+  }
+  .natural-item:nth-child(3) .arrow {
+    left: 0;
+  }
+  .natural-item:nth-child(6) .arrow {
+    left: 100% !important;
+  }
 }
 @media screen and (max-width: 600px) {
+  .routes {
+    margin-top: 0 !important;
+  }
   .phrase-hero h1 {
     font-size: 4rem;
     font-weight: 400;
